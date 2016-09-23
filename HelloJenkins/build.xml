@@ -5,14 +5,14 @@
     <!--define folder properties-->
     <property name="dir.buildfile" value="."/>
     <property name="dir.workspace" value="/Users/peterandersson/workspace/alpha"/>
-    <property name="dir.jarfile" value="${dir.buildfile}/HelloJenkins/runnable-jar"/>
+    <property name="dir.jarfile" value="${dir.buildfile}/runnable-jar"/>
     <target name="create_run_jar">
         <jar destfile="${dir.jarfile}/Untitled.jar" filesetmanifest="mergewithoutmain">
             <manifest>
                 <attribute name="Main-Class" value="Hello"/>
                 <attribute name="Class-Path" value="."/>
             </manifest>
-            <fileset dir="${dir.buildfile}/HelloJenkins/bin"/>
+            <fileset dir="${dir.buildfile}/bin"/>
         </jar>
     </target>
 </project>
